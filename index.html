@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HostAssist - Управляйте недвижимостью легко</title>
+    <meta name="description"
+        content="Единая панель для управления всей вашей арендной недвижимостью. Надежный и простой в использовании инструмент.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <a href="#" class="navbar-brand">
+                <span class="logo-icon">H</span>
+                HostAssist
+            </a>
+
+            <div class="navbar-menu">
+                <a href="#home" class="nav-link active">Главная</a>
+                <a href="#features" class="nav-link">Преимущества</a>
+                <a href="#reviews" class="nav-link">Отзывы</a>
+                <a href="#pricing" class="nav-link">Тарифы</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+            </div>
+
+            <div class="navbar-actions">
+                <a href="#" class="btn btn-primary">Получить доступ</a>
+            </div>
+
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero-section">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Единая панель управления для <span class="highlight">ваших объектов</span></h1>
+                <p class="hero-subtitle">Готовый к работе и простой инструмент для автоматизации вашего бизнеса,
+                    обеспечивающий надежность и гибкость.</p>
+                <div class="hero-actions">
+                    <a href="#" class="btn btn-primary">Получить доступ</a>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <div class="dashboard-mockup">
+                    <div class="mockup-header">
+                        <div class="mockup-dot"></div>
+                        <div class="mockup-dot"></div>
+                        <div class="mockup-dot"></div>
+                    </div>
+                    <!-- Placeholder content for dashboard -->
+                    <div class="mockup-content">
+                        <div class="mockup-sidebar"></div>
+                        <div class="mockup-main">
+                            <div class="mockup-card card-1"></div>
+                            <div class="mockup-card card-2"></div>
+                            <div class="mockup-card card-3"></div>
+                            <div class="mockup-card card-large"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section section-bg">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge">Полезные функции</span>
+                <h2 class="section-title">Всё необходимое для запуска</h2>
+                <p class="section-subtitle">Не просто набор инструментов — мы включили самые частые сценарии
+                    использования, чтобы вам не пришлось изобретать колесо.</p>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🚀</div>
+                    <h3 class="feature-title">Высокая скорость</h3>
+                    <p class="feature-desc">Контент доставляется пользователям максимально быстро.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3 class="feature-title">Безопасность</h3>
+                    <p class="feature-desc">Все ваши данные надежно защищены современными методами шифрования.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3 class="feature-title">Адаптивность</h3>
+                    <p class="feature-desc">Отлично выглядит и работает на любых устройствах и экранах.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚙️</div>
+                    <h3 class="feature-title">Гибкие настройки</h3>
+                    <p class="feature-desc">Легко настраивайте панель управления под свои нужды.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔄</div>
+                    <h3 class="feature-title">Синхронизация</h3>
+                    <p class="feature-desc">Данные всегда актуальны на всех ваших устройствах.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3 class="feature-title">Аналитика</h3>
+                    <p class="feature-desc">Получайте инсайты о эффективности ваших объектов.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="reviews" class="reviews-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge">Отзывы клиентов</span>
+                <h2 class="section-title">Истории успеха</h2>
+                <p class="section-subtitle">Посмотрите, что говорят наши клиенты о своем опыте.</p>
+            </div>
+
+            <div class="reviews-grid">
+                <!-- Review Card 1 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">ИП</div>
+                        <div class="review-meta">
+                            <h4 class="reviewer-name">Иван Петров</h4>
+                            <span class="reviewer-role">Управляющий</span>
+                        </div>
+                        <div class="review-rating">⭐⭐⭐⭐⭐</div>
+                    </div>
+                    <p class="review-text">"HostAssist полностью изменил мой бизнес на Airbnb. Очень рекомендую!"</p>
+                </div>
+                <!-- Review Card 2 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">АС</div>
+                        <div class="review-meta">
+                            <h4 class="reviewer-name">Анна Смирнова</h4>
+                            <span class="reviewer-role">Суперхост</span>
+                        </div>
+                        <div class="review-rating">⭐⭐⭐⭐⭐</div>
+                    </div>
+                    <p class="review-text">"Лучшая панель управления, которую я использовала. Просто, быстро и надежно."
+                    </p>
+                </div>
+                <!-- Review Card 3 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <div class="review-avatar">РК</div>
+                        <div class="review-meta">
+                            <h4 class="reviewer-name">Роман Ковалев</h4>
+                            <span class="reviewer-role">Владелец агентства</span>
+                        </div>
+                        <div class="review-rating">⭐⭐⭐⭐⭐</div>
+                    </div>
+                    <p class="review-text">"Наконец-то инструмент, который понимает нужды управляющих недвижимостью."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing-section section-bg">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge">Тарифные планы</span>
+                <h2 class="section-title">Гибкие цены для вас</h2>
+                <p class="section-subtitle">Выберите план, который лучше всего подходит вам и вашей команде.</p>
+
+                <div class="pricing-toggle">
+                    <span class="toggle-label active">Месяц</span>
+                    <label class="switch">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                    <span class="toggle-label">Год <span class="discount-badge">-10%</span></span>
+                </div>
+            </div>
+
+            <div class="pricing-grid">
+                <!-- Basic -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="plan-name">Базовый</h3>
+                        <div class="plan-price">0₽<span class="period">/мес</span></div>
+                        <p class="plan-desc">Простой старт для всех</p>
+                    </div>
+                    <ul class="plan-features">
+                        <li>1 Аккаунт</li>
+                        <li>До 5 объектов</li>
+                        <li>Базовая аналитика</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline">Начать</a>
+                </div>
+
+                <!-- Standard -->
+                <div class="pricing-card popular">
+                    <div class="popular-tag">Популярный</div>
+                    <div class="pricing-header">
+                        <h3 class="plan-name">Стандарт</h3>
+                        <div class="plan-price">1900₽<span class="period">/мес</span></div>
+                        <p class="plan-desc">Для малого и среднего бизнеса</p>
+                    </div>
+                    <ul class="plan-features">
+                        <li>5 Аккаунтов</li>
+                        <li>До 20 объектов</li>
+                        <li>Расширенная аналитика</li>
+                        <li>Поддержка 24/7</li>
+                    </ul>
+                    <a href="#" class="btn btn-primary">Начать</a>
+                </div>
+
+                <!-- Enterprise -->
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="plan-name">Бизнес</h3>
+                        <div class="plan-price">4900₽<span class="period">/мес</span></div>
+                        <p class="plan-desc">Решение для крупных компаний</p>
+                    </div>
+                    <ul class="plan-features">
+                        <li>Безлимит аккаунтов</li>
+                        <li>Безлимит объектов</li>
+                        <li>Кастомные отчеты</li>
+                        <li>Личный менеджер</li>
+                    </ul>
+                    <a href="#" class="btn btn-outline">Начать</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="badge">FAQ</span>
+                <h2 class="section-title">Частые вопросы</h2>
+                <p class="section-subtitle">Найдите ответы на самые популярные вопросы здесь.</p>
+            </div>
+
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4 class="faq-question">Нужно ли платить за обновления?</h4>
+                    <p class="faq-answer">Нет, все обновления абсолютно бесплатны.</p>
+                </div>
+                <div class="faq-item">
+                    <h4 class="faq-question">Нужно ли платить для старта?</h4>
+                    <p class="faq-answer">Нет, вы можете начать с Базового тарифа, который бесплатен навсегда.</p>
+                </div>
+                <div class="faq-item">
+                    <h4 class="faq-question">Мои данные в безопасности?</h4>
+                    <p class="faq-answer">Да, мы используем современные стандарты шифрования для защиты ваших данных.
+                    </p>
+                </div>
+                <div class="faq-item">
+                    <h4 class="faq-question">Могу ли я отменить подписку?</h4>
+                    <p class="faq-answer">Да, вы можете отменить подписку в любой момент, никаких долгосрочных
+                        контрактов.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <span class="logo-icon small">H</span>
+                HostAssist
+            </div>
+            <div class="footer-copyright">
+                &copy; 2026 HostAssist. Все права защищены.
+            </div>
+            <div class="footer-social">
+                <a href="#">Twitter</a>
+                <a href="#">LinkedIn</a>
+                <a href="#">Facebook</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Navbar scroll effect
+        window.addEventListener('scroll', function () {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile menu toggle
+        document.querySelector('.menu-toggle').addEventListener('click', function () {
+            document.querySelector('.navbar-menu').classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>
