@@ -134,6 +134,11 @@ ul {
     gap: 2rem;
 }
 
+.navbar-actions .btn {
+    padding: 0.525rem 1.05rem;
+    font-size: 0.7rem;
+}
+
 .nav-link {
     font-weight: 500;
     color: var(--color-text-dark);
