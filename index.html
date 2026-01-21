@@ -54,7 +54,7 @@
             </div>
 
             <div class="navbar-actions">
-                <a href="#" class="btn btn-primary">Получить доступ</a>
+                <a href="#" class="btn btn-primary">Вход/Регистрация</a>
             </div>
 
             <button class="menu-toggle" aria-label="Toggle menu">
@@ -213,12 +213,11 @@
                 </div>
             </div>
 
-            <div class="pricing-grid">
                 <!-- Basic -->
                 <div class="pricing-card">
                     <div class="pricing-header">
                         <h3 class="plan-name">Базовый</h3>
-                        <div class="plan-price">0₽<span class="period">/мес</span></div>
+                        <div class="plan-price" data-monthly="0" data-yearly="0">0₽<span class="period">/мес</span></div>
                         <p class="plan-desc">Простой старт для всех</p>
                     </div>
                     <ul class="plan-features">
@@ -234,7 +233,7 @@
                     <div class="popular-tag">Популярный</div>
                     <div class="pricing-header">
                         <h3 class="plan-name">Стандарт</h3>
-                        <div class="plan-price">1900₽<span class="period">/мес</span></div>
+                        <div class="plan-price" data-monthly="1900" data-yearly="20580">1900₽<span class="period">/мес</span></div>
                         <p class="plan-desc">Для малого и среднего бизнеса</p>
                     </div>
                     <ul class="plan-features">
@@ -250,7 +249,7 @@
                 <div class="pricing-card">
                     <div class="pricing-header">
                         <h3 class="plan-name">Бизнес</h3>
-                        <div class="plan-price">4900₽<span class="period">/мес</span></div>
+                        <div class="plan-price" data-monthly="4900" data-yearly="52920">4900₽<span class="period">/мес</span></div>
                         <p class="plan-desc">Решение для крупных компаний</p>
                     </div>
                     <ul class="plan-features">
@@ -261,7 +260,6 @@
                     </ul>
                     <a href="#" class="btn btn-outline">Начать</a>
                 </div>
-            </div>
         </div>
     </section>
 
@@ -349,6 +347,32 @@
         document.addEventListener('click', function () {
             document.querySelectorAll('.nav-item-dropdown.active').forEach(dropdown => {
                 dropdown.classList.remove('active');
+            });
+        });
+
+        // Pricing toggle
+        const pricingToggle = document.querySelector('.pricing-toggle input');
+        const toggleLabels = document.querySelectorAll('.pricing-toggle .toggle-label');
+        const planPrices = document.querySelectorAll('.plan-price');
+
+        pricingToggle.addEventListener('change', function () {
+            const isYearly = this.checked;
+
+            // Update toggle labels
+            toggleLabels[0].classList.toggle('active', !isYearly);
+            toggleLabels[1].classList.toggle('active', isYearly);
+
+            // Update prices
+            planPrices.forEach(priceEl => {
+                const monthly = parseInt(priceEl.dataset.monthly);
+                const yearly = parseInt(priceEl.dataset.yearly);
+                const periodEl = priceEl.querySelector('.period');
+
+                if (isYearly) {
+                    priceEl.innerHTML = `${yearly.toLocaleString()}₽<span class="period">/год</span>`;
+                } else {
+                    priceEl.innerHTML = `${monthly}₽<span class="period">/мес</span>`;
+                }
             });
         });
     </script>

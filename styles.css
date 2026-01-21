@@ -470,6 +470,27 @@ section {
     margin-top: 2rem;
 }
 
+.toggle-label {
+    font-weight: 500;
+    color: var(--color-text-muted);
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.toggle-label.active {
+    color: var(--color-primary);
+    font-weight: 600;
+}
+
+.discount-badge {
+    background-color: var(--color-primary);
+    color: white;
+    padding: 0.2rem 0.5rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
 .switch {
     position: relative;
     display: inline-block;
